@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style css link -->
+    <link rel="stylesheet" href="./style.css">
+    <!--  -->
+</head>
+    <style>
+       h1{
+           color: red;
+       }
+    </style>
+<body>
+    <!-- <h1 id="head" >HELLO WORLD</h1>
+    inline js
+    <button onclick="document.getElementById('head').innerHTML = 'SALAM DUNYA'">Aze</button>  -->
+    
+    <h1 id="head" >HELLO WORLD</h1>
+    <button onclick="translate_rus()">Rus</button>
+    <button onclick="translate_aze()">Aze</button>
+    <button onclick="translate_eng()">Eng</button>
+
+</body>
+
+
+    <script>
+    function translate_aze() {
+       document.getElementById('head').innerHTML = 'SALAM DUNYA'  
+    }
+
+    function translate_rus() {
+        document.getElementById('head').innerHTML = 'ПРИВЕТ МИР'
+    }
+
+    function translate_eng() {
+        document.getElementById('head').innerHTML = 'HELLO WORLD'
+    }
+    </script>
+</html>
